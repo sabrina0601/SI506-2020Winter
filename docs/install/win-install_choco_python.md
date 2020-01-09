@@ -226,8 +226,10 @@ PS C:\Users\arwhyte> choco upgrade chocolatey
 
 For other `choco` commands see the [Chocolatey Wiki](https://github.com/chocolatey/choco/wiki/CommandsReference) on Github.
 
-### 5.1 Upgrade pip
-However, before installing `virtualenv` make sure that the latest version of `pip`, Python's own package manager, is installed locally:
+## <a name="venv">4.0 Set up a Virtual Environment</a>
+
+### 4.1 Upgrade pip
+Before installing `virtualenv` make sure that the latest version of `pip`, Python's own package manager, is installed locally:
 
 ```commandline
 PS C:\Users\arwhyte> python -m pip install --upgrade pip
@@ -240,14 +242,14 @@ Installing collected packages: pip
 Successfully installed pip-18.0
 ```
 
-### 5.2 Install virtualenv
+### 4.2 Install virtualenv
 Once `pip` is updated, use it to install the `virtualenv` package.
 
 ```commandline
 PS PS C:\Users\arwhyte> pip install virtualenv
 ```
 
-### 5.3 Create the Virtual Environment
+### 4.3 Create the Virtual Environment
 Now create a virtual environment for your django project.  Create it from within the project root directory:
 
 ```commandline
@@ -258,7 +260,7 @@ New python executable in C:\Users\arwhyte\Development\repos\github\arwhyte\djang
 Installing setuptools, pip, wheel...done.
 ```
 
-### 5.4 Activate the Virtual Environment
+### 4.4 Activate the Virtual Environment
 :warning: You __must__ activate the virtual environment before adding project-specific Python 
 packages such as Django.
 
