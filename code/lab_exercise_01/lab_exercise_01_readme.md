@@ -5,10 +5,12 @@ creation and value assignment. The primary goal of this lab assignment is simply
 you with an early introduction to Python variables and to make sure your editor and environment
 are set up correctly (some of the code here will only run if you have Python 3 installed). 
 
-Retrieve the lab exercise 02 template file and README at [https://github.com/umsi-arwhyte/SI506-2019Fall/tree/master/code/gradescope/lab_exercise_02](https://github.com/umsi-arwhyte/SI506-2019Fall/tree/master/code/gradescope/lab_exercise_02)
+Retrieve the lab exercise 01 template file and README in Canvas Files or from the Github
+[SI506-2020Winter](https://github.com/umsi-arwhyte/SI506-2020Winter/tree/master/code/lab_exercise_01) 
+repo.
 
 When you have completed the problem set click on the Gradescope link in Canvas and upload your
-`lab_exercise_02.py` file to the Gradescope site.  Your submission will be auto-graded and any runtime
+`lab_exercise_01.py` file to the Gradescope site.  Your submission will be auto-graded and any runtime
 errors encountered will be recoded and displayed.  You may re-submit your exercise as many
 times as is necessary before the close date.  Late submissions will be penalized as described
 in the syllabus.
