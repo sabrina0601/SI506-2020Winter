@@ -1,6 +1,6 @@
 # Readings: Week 03
 
-Lecture 03 kicked off a discussion of Python objects, variables, types, statements, expressions and arithmetic operators.  We will explore these topics in more detail this week along with immutable strings and immutable, though ordered, lists.
+Lecture 03 kicked off a discussion of Python objects, variables, types, statements, expressions and arithmetic operators.  We will explore these topics in more detail this week along with immutable strings and mutable, though ordered, lists.
 
 :warning: To access readings on the O'Reilly Learning Platform you need a "school" account.  See [instructions](./readings-oreilly_learning_platform.md) on how to create and activate your account.
 
