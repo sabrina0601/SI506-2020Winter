@@ -4,7 +4,7 @@ Lecture 03 kicked off a discussion of Python objects, variables, types, statemen
 
 :warning: To access readings on the O'Reilly Learning Platform you need a "school" account.  See [instructions](./readings-oreilly_learning_platform.md) on how to create and activate your account.
 
-### Canvas files
+## Canvas Files
 
 :exclamation: C. Severance, [Python for Everybody](https://www.py4e.com/book) EPUB and PDF versions are available in Canvas Files.  Chuck's book has been translated into several languages and is available in various formats (i.e., HTML, PDF, EPUB, Mobi) at [https://www.py4e.com/book](https://www.py4e.com/book). All Tagliaferri articles are republished in L. Tagliaferri, [How to Code in Python 3](https://www.digitalocean.com/community/books/digitalocean-ebook-how-to-code-in-python) (Digital Ocean, Feb 2018). [PDF](https://do.co/python-book-pdf) and [EPUB](https://do.co/python-book-epub) versions are also available in Canvas Files.
 
@@ -54,5 +54,6 @@ __or__
 
 Lisa Tagliaferri is another author I like. Like Eric she provides a solid introduction to the `list` data type and list methods such as `list.append()`, `list.insert()`, `list.remove()`, `list.pop()`, `list.copy()`, and `list.sort()`.
 
-### License
+## License
+
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
