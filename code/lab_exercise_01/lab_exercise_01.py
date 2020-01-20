@@ -11,9 +11,9 @@ print('Lab Exercise 01 \n')
 # and the editor program you used to edit this file, respectively.
 # BEGIN SOLUTION 1
 
-name = "your_name_here" # <- make sure this has quotes around it so that it is a string variable
-class_number = 100 # <- no quotes required here because it is an integer variable
-editor = "your_editor_here" # <- again, make sure this has quotes around it
+name = "Hanjia Zhang" # <- make sure this has quotes around it so that it is a string variable
+class_number = 506 # <- no quotes required here because it is an integer variable
+editor = "VS Code" # <- again, make sure this has quotes around it
 
 # END SOLUTION 1
 
@@ -23,7 +23,7 @@ editor = "your_editor_here" # <- again, make sure this has quotes around it
 # in that order.
 # BEGIN SOLUTION 2
 
-my_first_list = []
+my_first_list = [name, class_number, editor]
 
 # END SOLUTION 2
 
