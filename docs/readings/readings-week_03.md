@@ -4,10 +4,6 @@ Lecture 03 kicked off a discussion of Python objects, variables, types, statemen
 
 :warning: To access readings on the O'Reilly Learning Platform you need a "school" account.  See [instructions](./readings-oreilly_learning_platform.md) on how to create and activate your account.
 
-## Canvas Files
-
-:exclamation: C. Severance, [Python for Everybody](https://www.py4e.com/book) EPUB and PDF versions are available in Canvas Files.  Chuck's book has been translated into several languages and is available in various formats (i.e., HTML, PDF, EPUB, Mobi) at [https://www.py4e.com/book](https://www.py4e.com/book). All Tagliaferri articles are republished in L. Tagliaferri, [How to Code in Python 3](https://www.digitalocean.com/community/books/digitalocean-ebook-how-to-code-in-python) (Digital Ocean, Feb 2018). [PDF](https://do.co/python-book-pdf) and [EPUB](https://do.co/python-book-epub) versions are also available in Canvas Files.
-
 ## Objects, Variables, Expressions, and Statements
 
 **Charles Severance, [Python for Everybody. Exploring data in Python 3](https://www.py4e.com/book) (CreateSpace, 2016).**
@@ -24,35 +20,55 @@ A short section that should help clarify what constitutes an object in Python (i
 
 ## Data Types
 
-**Lisa Tagliaferri, "[Understanding Data Types in Python 3](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-python-3)" (DigitalOcean, Sept 2016).**
+**Lisa Tagliaferri, ["Understanding Data Types in Python 3"](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-python-3)" (DigitalOcean, Sept 2016).**
 
 A useful introduction to the various Python data types that you will get to know and love this semester: string, integer, float, boolean, list, tuple, and dictionary.
 
 ## Strings
 
-**Lisa Tagliaferri, "[An Introduction to Working with Strings in Python 3](https://www.digitalocean.com/community/tutorials/an-introduction-to-working-with-strings-in-python-3)" (DigitalOcean, Sept 2016).**
+**Lisa Tagliaferri, ["An Introduction to Working with Strings in Python 3"](https://www.digitalocean.com/community/tutorials/an-introduction-to-working-with-strings-in-python-3)" (DigitalOcean, Sept 2016).**
 
-**Lisa Tagliaferri, "[How To Format Text in Python 3](https://www.digitalocean.com/community/tutorials/how-to-format-text-in-python-3)" (DigitalOcean, Sept 2016).**
+**Lisa Tagliaferri, ["How To Format Text in Python 3"](https://www.digitalocean.com/community/tutorials/how-to-format-text-in-python-3) (DigitalOcean, Sept 2016).**
 
-**Lisa Tagliaferri, "[An Introduction to String Functions in Python 3](https://www.digitalocean.com/community/tutorials/an-introduction-to-string-functions-in-python-3)" (DigitalOcean, Nov 2016).**
+**Lisa Tagliaferri, ["An Introduction to String Functions in Python 3"](https://www.digitalocean.com/community/tutorials/an-introduction-to-string-functions-in-python-3) (DigitalOcean, Nov 2016).**
 
 Taken together Lisa Tagliaferri's three articles provide an economical introduction for coming to grips with the string data type. Note that the string data type provides you with a number of string manipulation methods such as `str.join()`, `str.split()`, and `str.replace()`. Note too the always useful built-in `len()` function which returns the number of elements in a sequences like strings and lists.
+
+## String Methods Reference
+
+**w3schools, ["Python String Methods"](https://www.w3schools.com/python/python_ref_string.asp) (w3schools.com, nd).**
+
+Not quite a cheat sheet but close. Use it as a reference.
 
 ## Lists
 
 **Eric Matthes, [Python Crash Course](https://learning.oreilly.com/library/view/python-crash-course/9781492071266/), 2nd Edition (No Starch Press, 2019).**
 
-Read Chapter 3, "[Introducing Lists](https://learning.oreilly.com/library/view/python-crash-course/9781492071266/xhtml/ch03.xhtml#ch03)"
+Read Chapter 3, ["Introducing Lists"](https://learning.oreilly.com/library/view/python-crash-course/9781492071266/xhtml/ch03.xhtml#ch03).
 
 Eric Matthes' book is an engaging read. Unlike many starter books on Python he introduces the list data type and working with list elements early in the conversation.
 
 __or__
 
-**Lisa Tagliaferri, "[Understanding Lists in Python 3](https://www.digitalocean.com/community/tutorials/understanding-lists-in-python-3)" (DigitalOcean, Nov 2016).**
+**Lisa Tagliaferri, ["Understanding Lists in Python 3"](https://www.digitalocean.com/community/tutorials/understanding-lists-in-python-3) (DigitalOcean, Nov 2016).**
 
-**Lisa Tagliaferri, "[How To Use List Methods in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-list-methods-in-python-3)" (DigitalOcean, Nov 2016).**
+**Lisa Tagliaferri, ["How To Use List Methods in Python 3"](https://www.digitalocean.com/community/tutorials/how-to-use-list-methods-in-python-3) (DigitalOcean, Nov 2016).**
 
 Lisa Tagliaferri is another author I like. Like Eric she provides a solid introduction to the `list` data type and list methods such as `list.append()`, `list.insert()`, `list.remove()`, `list.pop()`, `list.copy()`, and `list.sort()`.
+
+## List Methods Reference
+
+**w3schools, ["Python List Methods"](https://www.w3schools.com/python/python_ref_list.asp) (w3schools.com, nd).**
+
+Not quite cheat sheets but close. Use them as a reference.
+
+## List Cheat Sheet
+
+Eric Matthes, ["Beginner’s Python Cheat Sheet - Lists"](https://github.com/ehmatthes/pcc_2e/blob/master/cheat_sheets/beginners_python_cheat_sheet_pcc_lists.pdf).
+
+## Canvas Files
+
+:exclamation: C. Severance, [Python for Everybody](https://www.py4e.com/book) EPUB and PDF versions are available in Canvas Files. Chuck's book has been translated into several languages and is available in various formats (i.e., HTML, PDF, EPUB, Mobi) at [https://www.py4e.com/book](https://www.py4e.com/book). All Tagliaferri articles are republished in L. Tagliaferri, [How to Code in Python 3](https://www.digitalocean.com/community/books/digitalocean-ebook-how-to-code-in-python) (Digital Ocean, Feb 2018). [PDF](https://do.co/python-book-pdf) and [EPUB](https://do.co/python-book-epub) versions are also available in Canvas Files.
 
 ## License
 
