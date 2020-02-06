@@ -10,17 +10,13 @@ The readings also include an article on string formatting, a topic introduced la
 
 :warning: To access readings on the O'Reilly Learning Platform you need a "school" account.  See [instructions](./readings-oreilly_learning_platform.md) on how to create and activate your account.
 
-## Canvas Files
-
-:exclamation: C. Severance, [Python for Everybody](https://www.py4e.com/book) EPUB and PDF versions are available in Canvas Files. Chuck's book has been translated into several languages and is available in various formats (i.e., HTML, PDF, EPUB, Mobi) at [https://www.py4e.com/book](https://www.py4e.com/book). All Tagliaferri articles are republished in L. Tagliaferri, [How to Code in Python 3](https://www.digitalocean.com/community/books/digitalocean-ebook-how-to-code-in-python) (Digital Ocean, Feb 2018). [PDF](https://do.co/python-book-pdf) and [EPUB](https://do.co/python-book-epub) versions are also available in Canvas Files.
-
 ## Functions
 
 **Charles Severance, [Python for Everybody. Exploring data in Python 3](https://www.py4e.com/book) (CreateSpace, 2016).**
 
 :bulb: Entry point for the beginner.
 
-Read Chapter 4 “Functions”
+Read Chapter 4 “Functions”.
 
 Chuck discusses a few of the Python Standard Library's "built-in" functions and then turns his attention to custom functions that you can write using the `def` keyword. After reading Chuck proceed to Eric's chapter and Lisa's article.
 
@@ -45,13 +41,17 @@ Read Chapter 8 ["Functions"](https://learning.oreilly.com/library/view/python-cr
 
 Lisa is quick out of the starting block in her discussion of functions. It's a faster read than Eric's chapter. In particular, have a look at her section titled "Using main() as a Function". She discusses the purpose of the `main()` function and why including it in the programs you write provides you with greater control over code execution while also enhancing modularity and readability.
 
+## Functions Cheat Sheet
+
+Eric Matthes, ["Beginner’s Python Cheat Sheet - Functions"](https://github.com/ehmatthes/pcc_2e/blob/master/cheat_sheets/beginners_python_cheat_sheet_pcc_functions.pdf)
+
 ## Conditional Statements
 
 **Charles Severance, [Python for Everybody. Exploring data in Python 3](https://www.py4e.com/book) (CreateSpace, 2016).**
 
 :bulb: Entry point for the beginner.
 
-Read Chapter 3, "Conditional Execution"
+Read Chapter 3, "Conditional Execution".
 
 Chuck discusses boolean expressions, logical operators, conditional execution, chained/nested conditionals, and try/except blocks.  Start here and then read Lisa Tagliaferri's article and/or Eric Matthes chapter.
 
@@ -59,13 +59,21 @@ Chuck discusses boolean expressions, logical operators, conditional execution, c
 
 Lisa provides a useful introduction on how to craft `if-elif-else` conditional statements.
 
+**Lisa Tagliaferri, ["Understanding Boolean Logic in Python 3"](https://www.digitalocean.com/community/tutorials/understanding-boolean-logic-in-python-3)**
+
+Lisa discusses booleans, comparison operators, logical operators, truth values, and using expressions that return `True` or `False` for control flow, introduced in the last lecture.
+
 __or__
 
 **Eric Matthes, [Python Crash Course](https://learning.oreilly.com/library/view/python-crash-course/9781492071266/), 2nd Edition (No Starch Press, 2019).**
 
-Read chapter 5 [“If statements”](https://learning.oreilly.com/library/view/python-crash-course/9781492071266/xhtml/ch05.xhtml#ch05)
+Read chapter 5 [“If statements”](https://learning.oreilly.com/library/view/python-crash-course/9781492071266/xhtml/ch05.xhtml#ch05).
 
 Eric discusses conditional tests, `if` statements, using `if` statements with lists. Note that there are a couple of examples involving lists that refer to a `for` loop.  We cover loops next week.
+
+## Conditional Statements Cheat Sheet
+
+Eric Matthes, ["Beginner’s Python Cheat Sheet - If Statements and While Loops"](https://github.com/ehmatthes/pcc_2e/blob/master/cheat_sheets/beginners_python_cheat_sheet_pcc_if_while.pdf).
 
 ## Operators
 
@@ -85,7 +93,7 @@ Handy reference. Start getting to know the following operator groups:
 
 An overview of how to employ the various operators available to you when crafting expressions and statements.
 
-## Tracbacks
+## Exceptions
 
 **Chad Hansen, ["Understanding the Python Traceback"](https://realpython.com/python-traceback/) (RealPython, 2019).**
 
@@ -96,6 +104,7 @@ Chad discusses the "traceback", an error report issued by the Python Interpreter
 * What are some Common Tracebacks in Python?
 * (following exceptions _only_)
   * AttributeError
+  * IndentionError
   * NameError
   * SyntaxError
   * TypeError
@@ -105,6 +114,10 @@ Chad discusses the "traceback", an error report issued by the Python Interpreter
 **Joanna Jablonski, ["Python 3's f-Strings: An Improved String Formatting Syntax (Guide)"](https://realpython.com/python-f-strings/) (RealPython, nd).**
 
 Last week I highlighted three ways to format strings. Johanna's article provides a written summary, emphasisizing in particular the new formatted string literal approach, a.k.a "f-strings".
+
+## Canvas Files
+
+:exclamation: C. Severance, [Python for Everybody](https://www.py4e.com/book) EPUB and PDF versions are available in Canvas Files. Chuck's book has been translated into several languages and is available in various formats (i.e., HTML, PDF, EPUB, Mobi) at [https://www.py4e.com/book](https://www.py4e.com/book). All Tagliaferri articles are republished in L. Tagliaferri, [How to Code in Python 3](https://www.digitalocean.com/community/books/digitalocean-ebook-how-to-code-in-python) (Digital Ocean, Feb 2018). [PDF](https://do.co/python-book-pdf) and [EPUB](https://do.co/python-book-epub) versions are also available in Canvas Files.
 
 ## License
 
