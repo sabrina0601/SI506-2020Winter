@@ -56,7 +56,7 @@ Chad discusses the "traceback", an error report issued by the Python Interpreter
 * (following exceptions _only_)
   * AttributeError
   * IndentionError
-  * __IndexError__
+  * IndexError
   * __KeyError__
   * NameError
   * SyntaxError
