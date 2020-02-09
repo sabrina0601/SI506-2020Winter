@@ -39,6 +39,7 @@ Key topics covered in this course include:
 * errors, exceptions, and exception handling (try/except)
 * debugging
 * file read/write (text, CSV, JSON)
+* classes
 * interacting with a REST API
 * data processing
 
