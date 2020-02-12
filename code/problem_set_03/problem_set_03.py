@@ -25,19 +25,19 @@ nintendo_consoles = ["Famicom/Nintendo Entertainment System (NES), released: 198
 
 # <eighties_consoles> should include all the nintendo consoles that were released from
 # 1980 - 1989
-eighties_consoles = None
+eighties_consoles = nintendo_consoles[0]
 
 # <nineties_consoles> should include all the nintendo consoles that were released from
 # 1990 - 1999
-nineties_consoles = None
+nineties_consoles = nintendo_consoles[1:3]
 
 # <oughts_consoles> should include all the nintendo consoles that were released from
 # 2000 - 2009
-oughts_consoles = None
+oughts_consoles = nintendo_consoles[3:5]
 
 # <teens_consoles> should include all the nintendo consoles that were released from
 # 2010 - 2019
-teens_consoles = None
+teens_consoles = nintendo_consoles[5:]
 
 # END CODING
 print(f"""\nProblem 1:\neighties_consoles = {eighties_consoles}
@@ -56,7 +56,9 @@ teens_consoles = {teens_consoles}""")
 # [ "1983", "1990", ... etc. ]
 
 # BEGIN CODING
-release_years = None
+release_years = []
+for i in nintendo_consoles:
+    release_years.append(i.split(' ')[-1])
 
 # END CODING
 print(f"\nProblem 2:\nrelease_years = {release_years}")
@@ -125,11 +127,15 @@ def filter_by_units_sold(console,minimum_units_sold):
     """
 
     pass
+    if (int(console.split(',')[-1]) > minimum_units_sold):
+        return True
+    else:
+        return False
 
 # When you have finished <filter_by_units_sold>, uncomment the below lines to test your
 # function:
-# print(f"\nProblem 3:\nThis should print False: {filter_by_units_sold(vg_consoles[0],100000)}")
-# print(f"This should print True: {filter_by_units_sold(vg_consoles[0],1000)}")
+print(f"\nProblem 3:\nThis should print False: {filter_by_units_sold(vg_consoles[0],100000)}")
+print(f"This should print True: {filter_by_units_sold(vg_consoles[0],1000)}")
 
 
 # PROBLEM 4:
@@ -151,12 +157,13 @@ def format_string(console):
     """
 
     pass
+    return f"{console.split(',')[0]} was produced in {console.split(',')[3]} by {console.split(',')[1]}"
 
 # When you have finished <format_string>, uncomment the below lines to test your
 # function:
-# print(f"\nProblem 4:\nThe following two lines should be the same:")
-# print("Odyssey was produced in 1972 by Magnavox")
-# print(f"{format_string(vg_consoles[0])}")
+print(f"\nProblem 4:\nThe following two lines should be the same:")
+print("Odyssey was produced in 1972 by Magnavox")
+print(f"{format_string(vg_consoles[0])}")
 
 
 # PROBLEM 5
@@ -182,8 +189,14 @@ def main(console_list):
 
     pass
 
+    return_list = []
+    for i in console_list:
+        if (filter_by_units_sold(i,100000000)):
+            return_list.append(format_string(i))
+    return return_list
+
 # When you are finished with your <main> function, uncomment the below lines.
-# print(f"\nProblem 5:\nThe following line should include: PlayStation, PlayStation 2, PlayStation 4, and Wii")
-# print(f"{main(vg_consoles)}")
+print(f"\nProblem 5:\nThe following line should include: PlayStation, PlayStation 2, PlayStation 4, and Wii")
+print(f"{main(vg_consoles)}")
 
 # END PROBLEM SET

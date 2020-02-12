@@ -15,23 +15,23 @@ print('Lab Exercise 02 \n')
 # class = 'SI 506'
 # course name = 'SI 506'
 # $course_name = 'SI 506'
-# course_name = 'SI 506'
+course_name = 'SI 506'
 
 # Next, concatenate the text ": Programming I" to the value of the variable
 # selected above using the appropriate operator. Write code on next line.
-
+course_name = course_name + ': Programming I'
 # <-- put your code before this comment!
 
 # Next write a print() statement that prints the variable value to the
 # screen. Write code on next line.
-
+print(course_name)
 # <-- put your code before this comment!
 
 # Next determine the number of characters of your new string value using
 # the appropriate builtin function. Assign the value to the variable
 # <num_chars> (replace default value of -999):
 
-num_chars = -999
+num_chars = len(course_name)
 # <-- put your code before this comment!
 
 # Note use of the f-string notation to include a variable in the string that
@@ -89,8 +89,8 @@ and the crooked places will be made straight;
 
 # BEGIN PROBLEM 2 SOLUTION
 
-number_words = -999
-number_lines = -999
+number_words = len(i_have_a_dream.split())
+number_lines = i_have_a_dream.count("\n")
 
 # Note use of the built-in str() function to format num_char_chunks as a string,
 # and then the use of ''.join() to join all of the elements of the list with an

@@ -6,7 +6,7 @@ print("\nProblem 1:")
 # docstring.
 
 # BEGIN CODING HERE
-def addition(): # <-- Don't forget to fill out the function arguments!
+def addition(a, b=10): # <-- Don't forget to fill out the function arguments!
     """
     Simple function to become familiarized with function structure, paramaters, and return
     statements. This function will sum to numbers together.
@@ -18,12 +18,13 @@ def addition(): # <-- Don't forget to fill out the function arguments!
     Returns:
         (float or int): <a> added to <b>
     """
+    return a+b
 
 # END CODING
 
 # When you are finished with the <addition> function, uncomment the below line of code to see
 # if it works! This should return 15.
-#print(f"The sum of 5 and 10 is: {addition(5)}")
+print(f"The sum of 5 and 10 is: {addition(5)}")
 
 
 # PROBLEM 2
@@ -49,10 +50,10 @@ def filter(string,max_length):
 
     num_chars = len(string)
 
-    if num_chars > max_filter:
+    if num_chars > max_length:
         out = "Too Long!"
     else:
-        out = "string"
+        out = string
 
     return out
 
@@ -62,8 +63,8 @@ def filter(string,max_length):
 # need not modify any of the code in the following two lines, save for uncommenting them.
 # The first test should return as too long, and the second should return the initial string.
 
-#print(filter("This string has thirty-nine characters!",25))
-#print(filter("This string has thirty-nine characters!",40))
+print(filter("This string has thirty-nine characters!",25))
+print(filter("This string has thirty-nine characters!",40))
 
 # END PROBLEM 2
 
@@ -77,7 +78,7 @@ print("\nProblem 3:")
 # https://www.w3schools.com/python/python_ref_string.asp
 
 # BEGIN CODING HERE
-def umich_email_detection():
+def umich_email_detection(potential_email):
     """
     This function tests whether a string is a University of Michigan email address.
     If it is, it returns the uniqname before the '@umich.edu' (e.g., 'janesmith@umich.edu'
@@ -90,12 +91,15 @@ def umich_email_detection():
     Returns:
         (str): either a uniqname or an empty string.
     """
-
+    if (potential_email.endswith("@umich.edu")):
+        return potential_email.replace("@umich.edu", "")
+    else:
+        return ""
 # END CODING
 
 # When you are ready, uncomment the below lines to test your code.
-#print(f"This should print 'janesmith' -> {umich_email_detection('janesmith@umich.edu')}")
-#print(f"This should print nothing -> {umich_email_detection('janesmith@msu.edu')}")
+print(f"This should print 'janesmith' -> {umich_email_detection('janesmith@umich.edu')}")
+print(f"This should print nothing -> {umich_email_detection('janesmith@msu.edu')}")
 
 # END PROBLEM 3
 
@@ -124,8 +128,14 @@ Explanation:
 
 # BEGIN CODING HERE - OVERWRITE THE EXISTING FUNCTION
 
-def count_words_or_lines():
+def count_words_or_lines(string, operation="words"):
     pass
+    if(operation == "words"):
+        return len(string.split())
+    elif(operation == "lines"):
+        return len(string.splitlines())
+    else:
+        return "Choose a correct operation"
 
 # END CODING
 
@@ -145,9 +155,9 @@ and academic values,
 and in developing leaders and citizens who will challenge the present and enrich the future."""
 
 # BEGIN CODING HERE
-num_chars = -999
-num_words = -999
-num_lines = -999
+num_chars = len(mission)
+num_words = count_words_or_lines(string=mission, operation="words")
+num_lines = count_words_or_lines(string=mission, operation="lines")
 # END CODING
 
 print(f"The number of characters in UM's mission statement is {num_chars}")

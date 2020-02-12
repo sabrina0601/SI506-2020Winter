@@ -17,7 +17,7 @@ print('PROBLEM SET 01 \n')
 # 1st_bdfl = 'Guido van Rossum'
 # benevolent_dictator_for_life! = 'Guido van Rossum'
 # python author = 'Guido van Rossum'
-# python_author = 'Guido van Rossum'
+python_author = 'Guido van Rossum'
 # lambda = 'Guido van Rossum'
 
 # SETUP - DO NOT MODIFY
@@ -27,7 +27,7 @@ languages = ['Java', 'C++', 'Javascript', 'Ruby', 'Python', 'Fortran']
 # Next, use list indexing of the <languages> list to assign the language that Guido von Rossum
 # authored to the variable <guido_language>.
 
-guido_language = None
+guido_language = languages[4]
 
 # END 01A SOLUTION
 
@@ -46,7 +46,7 @@ print(f'Guido van Rossum authored {guido_language}\n')
 # Adopt the following format for the new string:
 # "<name>, President"
 
-python_foundation_officer = ''
+python_foundation_officer = python_author + ', ' + 'President'
 
 # Note the below use of the f-string to incorporate a variable into a string in the print
 # statement.
@@ -88,7 +88,7 @@ print(f'zen_of_python={zen_of_python}\n')
 # variable zen_of_python and assign the value to the variable <num_chars>.
 
 # BEGIN 01C SOLUTION
-num_chars = -999
+num_chars = len(zen_of_python)
 
 print(f'num_chars={num_chars}')
 # END 01C SOLUTION
@@ -102,7 +102,7 @@ print(f'num_chars={num_chars}')
 
 # BEGIN 01D SOLUTION
 
-num_char_chunks = -999
+num_char_chunks = len(zen_of_python.split())
 
 # Note use of the built-in str() function to format num_char_chunks as a string.
 print(f'num_char_chunks={num_char_chunks}\n')
@@ -116,7 +116,7 @@ print(f'num_char_chunks={num_char_chunks}\n')
 # Assign the value to the variable <avg_num_chunks_per_line>.
 
 # BEGIN 01E SOLUTION
-avg_num_chunks_per_line = -999
+avg_num_chunks_per_line = int(num_char_chunks/len(zen_of_python.splitlines()))
 
 # Notice how we can also use the string method .join() to join all of the elements
 # in a list by including that string in between each element.
@@ -131,7 +131,7 @@ print(''.join(['avg_num_chunks_per_line=', str(avg_num_chunks_per_line), '\n']))
 
 # BEGIN 01F SOLUTION
 
-zen_of_python_uniqname = ''
+zen_of_python_uniqname = zen_of_python.replace('Dutch', 'hanjiaz@umich.edu')
 
 print(''.join(['zen_of_python_uniqname=', zen_of_python_uniqname, '\n']))
 # END 01F SOLUTION

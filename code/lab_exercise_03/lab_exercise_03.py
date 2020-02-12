@@ -15,17 +15,17 @@ lunar_year = ""
 # <year>(data type: integer) and <year_animal>(data type: string) in this exact order. 
 # sample input to function: lunar_new_year(2020, "rat") 
 # sample output: returns the formatted string "2020 is the yar of rat." 
-
+def lunar_new_year(year, year_animal):
 # <-- put your code before this comment!
 # Within the function, indent!
 # Then concatenate the arguments passed in the same order to a string
 # using str.format() and and set it to a variable named <lunar_year>
 # This is your global variable that can be reached from anywhere in the program.
 # Use this format "{} is the year of {}.\n" and set your arguments.
-
+  lunar_year = "{} is the year of {}.\n".format(year, year_animal)
 # <-- put your code before this comment!
 # return <lunar_year>
-    
+  return lunar_year
 # <-- put your code before this comment!
 
 # END PROBLEM 1 SOLUTION
@@ -48,16 +48,16 @@ lunar_year = ""
 # Make sure you have the arguments in this order.
 # sample input to function: festivities_info(date_start = "February 8", message = "Lantern Festival")
 # sample output: returns the formated string message "February 8 is the day of Lantern Festival." 
-
+def festivities_info(date_start="8-Feb", message="Lantern Festival"):
 # <-- put your code before this comment!
 # Make sure you indent first! 
 # Now concatenate <date_start> and <message> using f-string and assign this to a new
 # variable called <new_message>. This is your local variable.
 # Use this formatting "{<your argument here>} is the day of {<your argument here'}.\n" 
-
+  new_message = f"{date_start} is the day of {message}.\n"
 # <-- put your code before this comment!
 # Return <new_message> 
-
+  return new_message
 # <-- put your code before this comment!
 # END PROBLEM 2 SOLUTION
 
@@ -75,14 +75,14 @@ def main():
 # Include the function call within a print statement.
 # Leave an indetation as this is within the 'main' function.
 # comment out the following code after your write your code.
-    pass
-
+  pass
+  print(lunar_new_year(2020,"rat"))
 # <-- put your code before this comment!
 #  Since we are returning a value from the 'festivities_info', lets include the function
 #  call within a print statment. Pass "February 8" as an argument, we will use the default
 #  value for the second argument. 
 # Leave an indetation as this is within  the 'main' function.
-
+  print(festivities_info(date_start="February 8"))
 # <-- put your code before this comment!
 
 # LAB 3 SETUP (DO NOT CHANGE)

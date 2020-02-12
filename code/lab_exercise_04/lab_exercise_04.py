@@ -39,7 +39,7 @@ caps_staff = ["Nidaa Shaikh|Psychologist|College of Engineering|nfkazi@umich.edu
 
 # BEGIN PROBLEM 1 SOLUTION
 
-nfkazi = None
+nfkazi = caps_staff[0]
 
 # END PROBLEM 1 SOLUTION
 
@@ -49,7 +49,7 @@ nfkazi = None
 
 # BEGIN PROBLEM 2 SOLUTION
 
-aroja = None
+aroja = caps_staff[-1]
 
 # END PROBLEM 2 SOLUTION
 
@@ -60,7 +60,7 @@ aroja = None
 
 # BEGIN PROBLEM 3 SOLUTION
 
-social_workers= None
+social_workers= caps_staff[2:5]
 
 # END PROBLEM 3 SOLUTION
 
@@ -73,6 +73,8 @@ social_workers= None
 # BEGIN PROBLEM 4 SOLUTION
 
 names_of_staff= []
+for n in caps_staff:
+    names_of_staff.append((n.split("|"))[0])
 
 # END PROBLEM 4 SOLUTION
 
@@ -95,6 +97,10 @@ def thank_you_caps_staff():
     -------
     prints out "Thank you, <name>" to each staff member.'''
     pass
+    for i in names_of_staff:
+        print(f"Thank you, {i}")
+
+thank_you_caps_staff()
 
 
 # END PROBLEM 5 SOLUTION
