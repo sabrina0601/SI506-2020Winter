@@ -30,7 +30,7 @@ fruits = {'apple': 10, 'banana': 20, 'strawberry': 6, 'orange' : 9}
 # The desired answer is [10, 20, 6, 9]
 # Hint: You can do this by calling the values of the dictionary
 
-num_fruits = []
+num_fruits = list(fruits.values())
 
 # END PROBLEM 1 SOLUTION
 
@@ -55,7 +55,8 @@ sum_fruits = 0
 # Iterate through each key-value pair in the dictionary and add the numbers
 # Save the sum of the numbers to the variable sum_fruits
 
-
+for c in fruits.values():
+    sum_fruits += c
 
 # END PROBLEM 2 SOLUTION
 
@@ -84,7 +85,9 @@ max_fruits = 0
 # Work with values
 # Save to a variable
 
-
+for value in fruits.values():
+    if (value > max_fruits):
+        max_fruits = value
 
 # END PROBLEM 3 SOLUTION
 
@@ -111,6 +114,9 @@ new_dict = {}
 # Use if statement to check if the value is greater than 6
 # Add the pair to the new dictionary
 
+for key in fruits.keys():
+    if (fruits[key] > 6):
+        new_dict[key] = fruits[key]
 
 # END PROBLEM 4 SOLUTION
 

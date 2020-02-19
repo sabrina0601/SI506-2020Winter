@@ -14,7 +14,8 @@
 
 # BEGIN CODING
 
-shakespeare = None
+shakespeare = {"name": "William Shakespeare", "born": 1564, "died": 1616}
+shakespeare["age"] = shakespeare["died"] - shakespeare["born"]
 
 # END CODING
 
@@ -51,7 +52,11 @@ golds = {
 
 # BEGIN CODING
 
-medal_count = None
+medal_count = 0
+
+for value in golds.values():
+    if (value >= 5):
+        medal_count += value
 
 # END CODING
 
@@ -86,7 +91,7 @@ and has failed.
 
 # BEGIN CODING
 # PROBLEM 3: (20 points)
-def process_string(): # <- Don't forget to update the parameters!
+def process_string(string): # <- Don't forget to update the parameters!
     """
     <process_string> will take any <string> passed as a parameter and perform three
     operations on it, in this order:
@@ -106,11 +111,16 @@ def process_string(): # <- Don't forget to update the parameters!
     """
 
     punctuation = ["'",",",".","?"]
+
     pass
+    
+    lower = string.lower()
+    remove = lower.replace(punctuation[0], "").replace(punctuation[1], "").replace(punctuation[2], "").replace(punctuation[3], "") 
+    return remove.split()
 
 
 # PROBLEM 4: (20 points)
-def word_frequency(): # <- Don't forget to update the parameters!
+def word_frequency(list_of_words): # <- Don't forget to update the parameters!
     """
     <word_frequency> will take a list of word strings and return a dictionary with
     the words as keys and the number of occurances of the word in <list_of_words> as
@@ -130,9 +140,16 @@ def word_frequency(): # <- Don't forget to update the parameters!
 
     pass
 
+    frequency = {}
+    for words in list_of_words:
+        if words not in frequency:
+            frequency[words] = 0
+        frequency[words] += 1
+    return frequency
+
 
 # PROBLEM 5: (20 points)
-def find_common_words(): # <- Don't forget to update the parameters!
+def find_common_words(frequency_dict, cutoff): # <- Don't forget to update the parameters!
     """
     <find_common_words> will take a frequency dictionary that describes how many times
     a word has occurred in a sting, and return a list of the words that have occurred
@@ -150,6 +167,12 @@ def find_common_words(): # <- Don't forget to update the parameters!
     """
 
     pass
+
+    new_list = []
+    for keys in frequency_dict.keys():
+        if (frequency_dict[keys] >= cutoff):
+            new_list.append(keys)
+    return new_list
 
 
 # PROBLEM 6: (20 points)
@@ -171,6 +194,8 @@ def main(poem):
     """
 
     pass
+
+    return find_common_words(word_frequency(process_string(poem)), 3)
 
 # END CODING
 
